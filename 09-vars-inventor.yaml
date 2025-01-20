@@ -1,5 +1,5 @@
 - name: display
-  hosts: 
+  hosts: local
   connection: 
   tasks:
   - name: print course information
