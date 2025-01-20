@@ -1,4 +1,4 @@
-- name: variables from files
+- name: display
   hosts: local
   connection: local
   tasks:
