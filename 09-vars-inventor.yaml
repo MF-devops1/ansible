@@ -1,6 +1,6 @@
 - name: display
   hosts: local
-  connection: 
+  connection: local
   tasks:
   - name: print course information
     ansible.builtin.debug:
