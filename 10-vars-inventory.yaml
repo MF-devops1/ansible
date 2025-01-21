@@ -1,5 +1,4 @@
 - name: variables from files
-  hosts: web
   hosts: hosts
   tasks:
   - name: show host's ip
