@@ -1,5 +1,5 @@
 - name: variables from files
-  hosts: hosts
+  hosts: local host
   tasks:
   - name: show host's ip
     ansible.builtin.debug:
