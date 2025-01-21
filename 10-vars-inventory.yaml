@@ -1,8 +1,10 @@
 - name: variables from files
   hosts: web
+  hosts: hosts
   tasks:
-  - name: ping my hosts
+  - name: show host's ip
     ansible.builtin.debug:
+      msg: " IP address{{ansible_host}}"
   - name: print course information
     ansible.builtin.debug:
       msg: "Course is {{ COURSE}},Duration is {{DURATION}}, Trainer is {{TRAINER}}"
