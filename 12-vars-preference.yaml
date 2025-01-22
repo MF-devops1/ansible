@@ -1,6 +1,6 @@
 - name: variables
   hosts: local
-  connection: local
+  # connection: local
   vars: # PLAY level variables
     GREET: "PLAY"
   vars_files:
