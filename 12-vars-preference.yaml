@@ -3,6 +3,7 @@
   connection: local
   vars: # PLAY level variables
     GREET: "PLAY"
+    Task:
   vars_files:
     - course.yaml
   vars_prompt:
