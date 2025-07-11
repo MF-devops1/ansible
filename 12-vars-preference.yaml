@@ -9,12 +9,12 @@
   - name: GREET
     prompt: Enter the value
     private: false
-  # tasks:
-  # - name: print the variable
-  #   # vars:
-  #   #   GREET: "TASK"
-  #   # ansible.builtin.debug:
-  #   #   msg: "Hello from {{ GREET }}"
+  tasks:
+  - name: print the variable
+    vars:
+      GREET: "TASK"
+    ansible.builtin.debug:
+      msg: "Hello from {{ GREET }}"
 
 #1. Command line or args
 #2. Task level
