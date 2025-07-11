@@ -15,3 +15,22 @@
   - name: print the variables1
     ansible.builtin.debug:
       msg: "Course is {{ COURSE }}, Duration is {{ DURATION }}, Trainer is {{ TRAINER }}"
+
+
+- name: variables
+  hosts: local 
+  connection: local 
+  vars: 
+    course: "Devops with Aws"
+    Duration: 120hrs
+    Trainer: Dheeraja
+  Tasks:
+  - name: print he variables 
+    vars:
+      Course: Ansible 
+    ansible.builtin.debug:
+      msg: "Course is {{course}}, Duration is {{Duration}},Trainer is {{Trainer}}"
+  
+  - name: print the variable1 
+    ansible.builtin/debug:
+      msg: "Course is {{course}}, Duration is "
