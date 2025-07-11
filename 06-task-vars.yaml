@@ -24,7 +24,7 @@
     course: "Devops with Aws"
     Duration: 120hrs
     Trainer: Dheeraja
-  Tasks:
+  tasks:
   - name: print he variables 
     vars:
       Course: Ansible 
